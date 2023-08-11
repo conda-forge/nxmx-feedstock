@@ -1,11 +1,11 @@
-About nxmx
-==========
+About nxmx-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nxmx-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/nxmx/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nxmx-feedstock/blob/main/LICENSE.txt)
 
 Summary: Read HDF5 data conforming to the NXmx application definition of the NeXus format
 
@@ -143,5 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jbeilstenedmands](https://github.com/jbeilstenedmands/)
+* [@ndevenish](https://github.com/ndevenish/)
 * [@rjgildea](https://github.com/rjgildea/)
 

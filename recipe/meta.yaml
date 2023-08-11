@@ -1,5 +1,5 @@
 {% set name = "nxmx" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nxmx-{{ version }}.tar.gz
-  sha256: c4e95a68fb70be6ae822a42832a15f50e723b816d818a8b6a7a54d19d9109a59
+  sha256: 82e568a46c8e475be5de3479cd19f2db18b8e4e479254c447e907da6713d3e51
 
 build:
   noarch: python
