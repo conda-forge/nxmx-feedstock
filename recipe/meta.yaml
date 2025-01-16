@@ -6,20 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/nxmx-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nxmx-{{ version }}.tar.gz
   sha256: baf205d803412675bb613b01217985347704940a774170dfe7114fe1bb5ca7d5
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
+    - setuptools_scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - h5py
     - pint
     - python-dateutil
@@ -37,6 +39,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/nxmx/
