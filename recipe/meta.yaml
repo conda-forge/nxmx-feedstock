@@ -1,5 +1,6 @@
 {% set name = "nxmx" %}
 {% set version = "0.0.5" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +27,7 @@ requirements:
     - pint
     - python-dateutil
     - scipy
-    - numpy <2.0
+    - numpy
 
 test:
   imports:
